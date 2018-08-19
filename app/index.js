@@ -31,7 +31,7 @@ export default class Main extends React.Component {
         if ( results.status === 200 ) {
           return results.json()
         } else {
-          this.setState( { movies: <div className="alert alert-danger" role="alert">A Server Error Occurred, Please Try Again Later.</div> } );
+          this.setState( { movies: <div className="alert alert-danger" role="alert">A Error Occurred, Please Try Again Later.</div> } );
           throw `${results.status}: ${results.statusText}`;
         }
       } )
@@ -39,7 +39,7 @@ export default class Main extends React.Component {
         let movies = data.Search.map( each => {
           console.log( each );
           return (
-            <div key={each.imdbID} className='card-container col-lg-3 col-md-4 col-sm-6'>
+            <div key={each.imdbID} className='card-container col-xl-2 col-lg-3 col-md-4 col-sm-6'>
               <a href={`https://www.imdb.com/title/${each.imdbID}`} target='_blank' rel='noopener noreferrer'>
                 <div className='movie-card card'>
                   <div className='card-body'>

@@ -38,7 +38,7 @@ a:hover {
   margin: 10px 0;
 }
 .movie-card {
-  height: 468px;
+  height: 100%;
 }
 .movie-poster {
   overflow: hidden;
