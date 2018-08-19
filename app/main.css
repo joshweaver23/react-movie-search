@@ -1,0 +1,46 @@
+body {
+  color: #333;
+  background-color: #eee;
+  font-size: 16px;
+}
+a,
+a:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+.main-container {
+  padding-bottom: 40px;
+}
+.main-container h1 {
+  margin: 40px 0 30px;
+}
+.input-group {
+  margin: 0 auto;
+  max-width: 400px;
+}
+.btn-default {
+  background-color: rgb(7, 129, 129);
+  color: #fff;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.btn-default:hover {
+  background-color: rgb(5, 77, 77);
+}
+.alert-danger {
+  margin: 20px auto;
+  max-width: 500px;
+}
+.search-box {
+  padding: 5px;
+}
+.card-container {
+  margin: 10px 0;
+}
+.movie-card {
+  height: 468px;
+}
+.movie-poster {
+  overflow: hidden;
+  padding: 10px;
+}
